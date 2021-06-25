@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f731b4d-4034-478a-ab4f-10e3ffa4ce10" name="Default Changelist" comment="update counter without redux">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +90,7 @@
       <workItem from="1624646276459" duration="31000" />
       <workItem from="1624646409015" duration="1574000" />
       <workItem from="1624648167609" duration="166000" />
+      <workItem from="1624648994816" duration="509000" />
     </task>
     <task id="LOCAL-00001" summary="update counter without redux">
       <created>1624645720939</created>
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624646491784</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update counter without redux">
+      <created>1624649038708</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624649038708</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
