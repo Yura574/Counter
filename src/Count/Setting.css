@@ -1,11 +1,3 @@
-.App {
-    display: flex;
-    margin: 200px;
-}
-
-.App > div {
-    margin-right: 100px;
-}
 
 .Counter {
     display: flex;
@@ -42,9 +34,7 @@
     border-radius: 10px;
     font-size: 30px;
     background-color: deepskyblue;
-
 }
-
 .buttons {
     display: flex;
     align-items: center;
@@ -64,7 +54,17 @@
     font-weight: bold;
 }
 
-button {
+.buttonSettingError{
+    width: 150px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+.buttonSettingError:disabled {
     width: 150px;
     height: 30px;
     background-color: deepskyblue;
@@ -75,71 +75,30 @@ button {
     font-size: 25px;
 }
 
-.incorrectValue {
-    color: red;
-}
-.errorButton{
-    background-color: red;
-}
-
-.buttonError{
-    width: 150px;
-    height: 30px;
-    background-color: deepskyblue;
-    color: darkslateblue;
-    font-weight: bold;
-    border-radius: 10px;
-    border: 0;
-    font-size: 25px;
-}
-button:disabled,
+.buttonSettingError:disabled,
 button[disabled]{
     border: 1px solid #999999;
     background-color: #cccccc;
     color: #666666;
 }
 
-button:hover {
+.buttonSetting {
+    width: 150px;
+    height: 30px;
+    background-color: deepskyblue;
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+
+.buttonSetting:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-button:active {
+.buttonSetting:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-input {
-    width: 150px;
-    border-radius: 10px;
-}
-
-.displaySetting {
-    display: flex;
-    flex-flow: column wrap;
-    font-weight: bold;
-    font-size: 30px;
-}
-
-.inputSettingMax {
-
-    text-align: center;
-}
-.inputSettingStart {
-    border-radius: 10px;
-    text-align: center;
-}
-.inputSettingMinError {
-    background-color: #ff7665;
-    border: 3px solid red;
-    text-align: center;
-}
-.inputSettingMaxError {
-    background-color: #ff7665;
-    border: 3px solid red;
-    text-align: center;
-}
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    opacity: 1;
 }

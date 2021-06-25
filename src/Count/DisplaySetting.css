@@ -1,0 +1,32 @@
+.displaySetting {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+.inputSettingMinError {
+    width: 150px;
+    background-color: #ff7665;
+    border-radius: 10px;
+    border: 3px solid red;
+    text-align: center;
+}
+.inputSettingMaxError {
+    width: 150px;
+    background-color: #ff7665;
+    border-radius: 10px;
+    border: 3px solid red;
+    text-align: center;
+}
+.inputSettingMax {
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
+.inputSettingStart {
+    width: 150px;
+    border-radius: 10px;
+    text-align: center;
+}
