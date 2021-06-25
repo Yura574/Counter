@@ -1,38 +1,145 @@
 .App {
-  text-align: center;
+    display: flex;
+    margin: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > div {
+    margin-right: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Counter {
+    display: flex;
+    flex-flow: column wrap;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 20%;
+    left: 0;
+    border: solid 5px darkslateblue;
+    margin: auto;
+    background-color: lightslategray;
+    border-radius: 10px;
+    color: darkslateblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.count {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 45%;
+    font-weight: bolder;
+    top: 20px;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    border: darkslateblue solid 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: deepskyblue;
+
 }
 
-.App-link {
-  color: #61dafb;
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: darkslateblue solid 5px;
+    background-color: lightslategray;
+    position: absolute;
+    top: 55%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    border-radius: 10px;
+    color: darkslateblue;
+    font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    width: 150px;
+    height: 30px;
+    background-color: deepskyblue;
+    color: darkslateblue;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+}
+
+.incorrectValue {
+    color: red;
+}
+.errorButton{
+    background-color: red;
+}
+
+.buttonError{
+    width: 150px;
+    height: 30px;
+    background-color: deepskyblue;
+    color: darkslateblue;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    font-size: 25px;
+}
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.displaySetting {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.inputSettingMax {
+
+    text-align: center;
+}
+.inputSettingStart {
+    border-radius: 10px;
+    text-align: center;
+}
+.inputSettingMinError {
+    background-color: #ff7665;
+    border: 3px solid red;
+    text-align: center;
+}
+.inputSettingMaxError {
+    background-color: #ff7665;
+    border: 3px solid red;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
 }
