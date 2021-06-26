@@ -14,13 +14,15 @@ export function DisplaySetting(props: DisplaySettingType) {
     return (
         <div className={'displaySetting'}>
             <Input
-                className={props.errorSettingMax ? 'inputSettingMaxError' : 'inputSettingMax'}
+                className={props.errorSettingMax
+                    ? 'inputSettingMaxError' : 'inputSettingMax'}
                 valueTitle={'max value'}
                 value={props.maxValue}
                 onChangeHandler={props.onChangeHandlerMaxValue}
                 type={'number'}/>
             <Input
-                className={props.errorSettingMax || props.errorSettingStart ? 'inputSettingMinError' : 'inputSettingStart'}
+                className={props.errorSettingMax || props.errorSettingStart
+                    ? 'inputSettingMinError' : 'inputSettingStart'}
                 valueTitle={'start value'} value={props.minValue}
                 onChangeHandler={props.onChangeHandlerMinValue}
                 type={'number'}/>
