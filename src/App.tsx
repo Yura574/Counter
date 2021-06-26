@@ -1,7 +1,7 @@
 import React, {ChangeEvent, useEffect, useState} from 'react';
 
 import './App.css';
-import {Counter} from "./Counter";
+import {Counter} from "./Count/Counter";
 import {Setting} from "./Count/Setting";
 
 

@@ -111,6 +111,7 @@ button:active {
 input {
     width: 150px;
     border-radius: 10px;
+    outline:none;
 }
 
 .displaySetting {
