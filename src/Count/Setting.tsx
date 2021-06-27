@@ -37,7 +37,7 @@ export function Setting(props: SettingType) {
                             className={'buttonSetting'}
                             onClick={props.setLocalStorage}
                             title={'Set'}
-                            disabled={ props.errorSettingMax || props.div}
+                            disabled={ props.errorSettingMax || props.div || props.errorSettingStart}
                         />
                     </div>
                 </div>

@@ -27,6 +27,7 @@ export function Counter(props: CounterType) {
                              maxValue={props.maxValue}
                              div={props.div}
                              setErrorSettingMax={props.setErrorSettingMax}
+                             errorSettingStart={props.errorSettingStart}
                     />
                 </div>
                 <div>

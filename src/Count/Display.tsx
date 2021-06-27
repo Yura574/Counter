@@ -5,14 +5,14 @@ type DisplayType = {
     maxValue: string
     div: boolean
     setErrorSettingMax: boolean | undefined
-    // errorSettingStart: boolean | undefined
+    errorSettingStart: boolean | undefined
 
 }
 
 export function Display(props: DisplayType) {
     function text() {
         debugger
-        if(props.setErrorSettingMax ){
+        if(props.setErrorSettingMax || props.errorSettingStart){
             return <div className={'incorrectValue'}>Incorrect value</div>
         }
         if (props.div) {
