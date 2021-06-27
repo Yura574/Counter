@@ -38,6 +38,7 @@ function App() {
             const newMinValue = JSON.parse(minValueAsString)
             setStartValue(newMinValue)
         }
+
         const setIncLocalStorage = localStorage.getItem('inc')
         if (setIncLocalStorage) {
             const newInc = JSON.parse(setIncLocalStorage)
